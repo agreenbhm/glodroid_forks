@@ -25,7 +25,7 @@
 #endif
 #include <watchdog.h>
 #include <dm/pinctrl.h>
-
+#include <stdio_dev.h>
 DECLARE_GLOBAL_DATA_PTR;
 
 /* Assigned in lowlevel_init.S

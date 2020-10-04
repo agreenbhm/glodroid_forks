@@ -31,7 +31,9 @@
 # define CONFIG_MACH_TYPE_COMPAT_REV	1
 #endif
 
-#define CONFIG_SYS_BOOTM_LEN		(64 << 20)
+#ifdef CONFIG_ARM64
+#define CONFIG_SYS_BOOTM_LEN		(32 << 20)
+#endif
 
 /* Serial & console */
 #define CONFIG_SYS_NS16550_SERIAL
